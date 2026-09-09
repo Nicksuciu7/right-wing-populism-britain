@@ -1,0 +1,19 @@
+{
+  "extends": "reproduce.json",
+  "project": {"profile": "Post-submission corrections"},
+  "paths": {
+    "derived_dir": "outputs/corrected/build",
+    "outputs_dir": "outputs/corrected/main"
+  },
+  "harmonisation_qc": {
+    "summary_path": "outputs/corrected/build/diagnostics/harmonisation_summary.csv"
+  },
+  "measurement": {
+    "pca_structure": {"path": "outputs/corrected/build/models/pca_scoring_structure.json"}
+  },
+  "demographic_overrides": {
+    "2013": {"age": {"missing_codes": [-7, -4, -3, -2, -1, 98, 99]}},
+    "2023": {"education": {"mapping_overrides": {"2": "high"}}},
+    "2024": {"education": {"mapping_overrides": {"2": "high"}}}
+  }
+}

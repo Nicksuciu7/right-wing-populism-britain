@@ -1,0 +1,231 @@
+{
+  "year": 2014,
+  "constructs": {
+    "populism": {
+      "items": {
+        "gov_trust": {
+          "var": "govright",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "people_no_say": {
+          "var": "govnosa2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "government_not_care_people_like_me": {
+          "var": "govnocar",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "politicians_in_it_for_themselves": {
+          "var": "govself",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "parliament_trust": {
+          "var": "Tstparl",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "redistribution_support": {
+          "var": "redistrb",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "management_exploits_workers": {
+          "var": "indust4",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "wealth_fair_share": {
+          "var": "wealth",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "one_law_rich_poor": {
+          "var": "richlaw",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        }
+      }
+    },
+    "right": {
+      "items": {
+        "stiff_sentences": {
+          "var": "stifsent",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "death_penalty": {
+          "var": "deathapp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "obey_authority": {
+          "var": "obey",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "obey_law": {
+          "var": "wronglaw",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "traditional_values": {
+          "var": "tradvals",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "censorship_morality": {
+          "var": "censor",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "nativism_eu_benefits_access": {
+          "var": "MigBAc2",
+          "min": 1,
+          "max": 7,
+          "direction": "normal"
+        },
+        "nativism_benefits_noneu": {
+          "var": "MigBAc1",
+          "min": 1,
+          "max": 7,
+          "direction": "normal"
+        },
+        "eu_policy": {
+          "var": "ECPolicy",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_helping_each_other": {
+          "var": "welfhelp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_spending": {
+          "var": "morewelf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_deserving": {
+          "var": "sochelp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_fiddling": {
+          "var": "dolefidl",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_stand_own_feet": {
+          "var": "welffeet",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_damage_lives": {
+          "var": "damlives",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_pride": {
+          "var": "proudwlf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_unemployed_jobs": {
+          "var": "unempjob",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_british": {
+          "var": "NatBrit",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_english": {
+          "var": "NatEng",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_european": {
+          "var": "NatEuro",
+          "min": 0,
+          "max": 1,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        }
+      }
+    }
+  }
+}

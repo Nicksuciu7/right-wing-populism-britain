@@ -1,0 +1,22 @@
+{
+  "year": 2010,
+  "file": "raw_sav/bsa10.sav",
+  "file_type": "sav",
+  "weight_var": "WtFactor",
+  "id_var": "Serial",
+  "missing_codes": [-7, -4, -3, -2, -1, 97, 98, 99],
+  "demographics_map": {
+    "age": {"source": "RAge"},
+    "gender": {"source": "RSex"},
+    "education": {"source": "HEdQual2"},
+    "income": {"source": "HHIncQ", "source_type": "quartile"},
+    "class": {"source": "RClassGp"},
+    "region": {"source": "GOR2"},
+    "religion": {"source": "ReligSum"},
+    "religiosity": {"source": "ChAttend"},
+    "ethnicity": {"source": "RaceOri3"},
+    "tenure": {"source": "Tenure2"},
+    "employment_status": {"source": "REconSum"},
+    "marital_status": {"source": "MarStat6"}
+  }
+}

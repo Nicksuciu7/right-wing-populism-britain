@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite this repository if you use its code, and cite each BSA dataset separately using its UK Data Service record."
+type: software
+title: "Measuring and Predicting Right-Wing Populism in Britain Since the 2008 Financial Crisis"
+authors:
+  - family-names: Suciu
+    given-names: Nicholas
+version: 1.0.0
+repository-code: "https://github.com/nicksuciu7/right-wing-populism-britain"
+url: "https://github.com/nicksuciu7/right-wing-populism-britain"
+license: MIT
+abstract: >-
+  Python research pipeline for harmonising five British Social Attitudes waves,
+  constructing a PCA-informed attitudinal proxy, and evaluating survey-weighted
+  ridge regression and descriptive cross-wave associations. BSc Computer
+  Science dissertation, University of Sussex, 2026.
+keywords:
+  - computational social science
+  - British Social Attitudes
+  - survey harmonisation
+  - ridge regression
+  - reproducible research

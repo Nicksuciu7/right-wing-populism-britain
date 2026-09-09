@@ -1,0 +1,546 @@
+{
+  "project": {
+    "name": "bsa_rwp_code",
+    "seed": 42,
+    "profile": "main",
+    "expected_years": [
+      2011,
+      2013,
+      2019,
+      2023,
+      2024
+    ]
+  },
+  "holdout_years": [
+    2023
+  ],
+  "paths": {
+    "raw_dir": "raw_sav",
+    "dictionary_dir": "data_dictionary",
+    "derived_dir": "outputs/build",
+    "outputs_dir": "outputs/main",
+    "attitude_map": "config/attitude_map"
+  },
+  "demographics": {
+    "numeric": [
+      "age",
+      "year"
+    ],
+    "categorical": [
+      "gender",
+      "education",
+      "income",
+      "class",
+      "region",
+      "religion",
+      "religiosity",
+      "ethnicity",
+      "tenure",
+      "employment_status",
+      "marital_status"
+    ],
+    "categories": {
+      "gender": [
+        "male",
+        "female",
+        "missing"
+      ],
+      "education": [
+        "low",
+        "mid",
+        "high",
+        "missing"
+      ],
+      "income": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "missing"
+      ],
+      "class": [
+        "high",
+        "mid",
+        "low",
+        "other",
+        "missing"
+      ],
+      "region": [
+        "Scotland",
+        "Northern Ireland",
+        "Wales",
+        "England",
+        "Other",
+        "missing"
+      ],
+      "religion": [
+        "none",
+        "christian",
+        "non_christian",
+        "missing"
+      ],
+      "religiosity": [
+        "weekly_or_more",
+        "monthly",
+        "yearly_or_less",
+        "never",
+        "missing"
+      ],
+      "ethnicity": [
+        "white",
+        "black",
+        "asian",
+        "mixed",
+        "other",
+        "missing"
+      ],
+      "tenure": [
+        "own",
+        "rent",
+        "other",
+        "missing"
+      ],
+      "employment_status": [
+        "employed",
+        "unemployed",
+        "retired",
+        "student",
+        "inactive",
+        "missing"
+      ],
+      "marital_status": [
+        "partnered",
+        "single",
+        "separated",
+        "widowed",
+        "other",
+        "missing"
+      ]
+    }
+  },
+  "harmonisation_qc": {
+    "strict": false,
+    "unmapped_rate_warn": 0.2,
+    "unmapped_rate_fail": 0.4,
+    "out_of_range_rate_warn": 0.01,
+    "out_of_range_rate_fail": 0.05,
+    "missing_source_warn": true,
+    "mapping_drift_warn": 0.2,
+    "summary_path": "outputs/build/diagnostics/harmonisation_summary.csv"
+  },
+  "trend_analysis": {
+    "enabled": true,
+    "predictor_track": "trend",
+    "prevalence_label_column": "RWP_top_20",
+    "prevalence_label_display_name": "RWP top 20%",
+    "target_column": "rwp_score",
+    "target_display_name": "RWP score",
+    "min_wave_coverage": 3,
+    "max_missing_rate": 0.4,
+    "exclude_features": [
+      "newspaper_readership"
+    ],
+    "exclude_holdout_years": true,
+    "overview_predictors": [
+      "employment_status",
+      "education",
+      "class",
+      "religion"
+    ],
+    "overview_exclude_predictors": [
+      "religiosity",
+      "ethnicity"
+    ],
+    "overview_metric": "permutation_r2_drop",
+    "permutation_repeats": 20
+  },
+  "predictor_tracks": {
+    "main": {
+      "min_wave_coverage": 3,
+      "include_features": [],
+      "exclude_features": []
+    },
+    "trend": {
+      "min_wave_coverage": 3,
+      "include_features": [],
+      "exclude_features": [
+        "year"
+      ]
+    }
+  },
+  "scores": {
+    "min_answered_share": 0.6,
+    "min_prevalence_warn": 0.01,
+    "min_prevalence_fail": 0.005,
+    "strict_prevalence": false
+  },
+  "measurement": {
+    "blocks": {
+      "rwp": {
+        "distrust": [
+          "populism__gov_trust",
+          "populism__mp_trust"
+        ],
+        "authoritarian": [
+          "right__death_penalty",
+          "right__stiff_sentences",
+          "right__obey_authority",
+          "right__obey_law",
+          "right__traditional_values",
+          "right__censorship_morality"
+        ],
+        "immigration": [
+          "right__immigration_economy",
+          "right__immigration_culture"
+        ],
+        "welfare": [
+          "right__welfare_helping_each_other",
+          "right__welfare_spending",
+          "right__welfare_deserving",
+          "right__welfare_fiddling",
+          "right__welfare_stand_own_feet",
+          "right__welfare_damage_lives",
+          "right__welfare_pride"
+        ]
+      }
+    },
+    "subscale_display_names": {
+      "rwp_distrust": "distrust",
+      "rwp_authoritarian": "right",
+      "rwp_immigration": "right",
+      "rwp_welfare": "welfare"
+    },
+    "correlation_min_abs": 0.1,
+    "rotation": "varimax",
+    "components": {
+      "rwp": "elbow"
+    },
+    "loading_min": 0.3,
+    "loading_gap": 0.1,
+    "min_items_per_subscale": 2,
+    "min_subscale_coverage": 0.0,
+    "standardize_subscales": {
+      "enabled": false,
+      "method": "zscore",
+      "use_weights": true
+    },
+    "subscale_threshold_rule": "top_20",
+    "subscale_threshold_weighted": true,
+    "pca_reference_years": [
+      2011,
+      2013,
+      2019,
+      2024
+    ],
+    "pca_structure": {
+      "mode": "fit",
+      "path": "outputs/build/models/pca_scoring_structure.json"
+    },
+    "strict_shared_item_years": [
+      2011,
+      2013,
+      2019,
+      2024
+    ]
+  },
+  "thresholds": {
+    "rule": "top_20",
+    "weighted": true
+  },
+  "modelling": {
+    "task": "regression",
+    "target_column": "rwp_score",
+    "ridge_alpha": 30,
+    "max_missing_rate": 0.7,
+    "predictor_track": "main",
+    "min_wave_coverage": 3,
+    "structural_missing_rate": 0.95
+  },
+  "split": {
+    "train_size": 0.7,
+    "stratify_on_year": false
+  },
+  "waves": [
+    {
+      "year": 2011,
+      "file": "raw_sav/bsa11.sav",
+      "file_type": "sav",
+      "weight_var": "WtFactor",
+      "id_var": "Serial",
+      "missing_codes": [
+        -7,
+        -4,
+        -3,
+        -2,
+        -1,
+        97,
+        98,
+        99
+      ],
+      "demographics_map": {
+        "age": {
+          "source": "RAge"
+        },
+        "gender": {
+          "source": "RSex"
+        },
+        "education": {
+          "source": "HEdQual2"
+        },
+        "income": {
+          "source": "HHIncQ",
+          "source_type": "quartile"
+        },
+        "class": {
+          "source": "RClassGp"
+        },
+        "region": {
+          "source": "GOR2"
+        },
+        "religion": {
+          "source": "ReligSum"
+        },
+        "religiosity": {
+          "source": "ChAttend"
+        },
+        "ethnicity": {
+          "source": "RaceOri3"
+        },
+        "tenure": {
+          "source": "Tenure2"
+        },
+        "employment_status": {
+          "source": "REconSum"
+        },
+        "marital_status": {
+          "source": "MarStat6"
+        }
+      }
+    },
+    {
+      "year": 2013,
+      "file": "raw_sav/bsa13.sav",
+      "file_type": "sav",
+      "weight_var": "WtFactor",
+      "id_var": "Serial",
+      "missing_codes": [
+        -7,
+        -4,
+        -3,
+        -2,
+        -1,
+        97,
+        98,
+        99
+      ],
+      "demographics_map": {
+        "age": {
+          "source": "RAge"
+        },
+        "gender": {
+          "source": "RSex"
+        },
+        "education": {
+          "source": "HEdQual2"
+        },
+        "income": {
+          "source": "HHIncQ",
+          "source_type": "quartile"
+        },
+        "class": {
+          "source": "RClassGp"
+        },
+        "region": {
+          "source": "GOR2"
+        },
+        "religion": {
+          "source": "ReligSum"
+        },
+        "religiosity": {
+          "source": "ChAttend"
+        },
+        "ethnicity": {
+          "source": "RaceOri3"
+        },
+        "tenure": {
+          "source": "Tenure2"
+        },
+        "employment_status": {
+          "source": "REconSum"
+        },
+        "marital_status": {
+          "source": "MarStat6"
+        }
+      }
+    },
+    {
+      "year": 2019,
+      "file": "raw_sav/bsa19.sav",
+      "file_type": "sav",
+      "weight_var": "WtFactor",
+      "id_var": "Sserial",
+      "missing_codes": [
+        -7,
+        -4,
+        -3,
+        -2,
+        -1,
+        97,
+        98,
+        99
+      ],
+      "demographics_map": {
+        "age": {
+          "source": "RageE"
+        },
+        "gender": {
+          "source": "RSex"
+        },
+        "education": {
+          "source": "HEdQual2"
+        },
+        "income": {
+          "source": "HHIncQ",
+          "source_type": "quartile"
+        },
+        "class": {
+          "source": "RClassGp"
+        },
+        "region": {
+          "source": "GOR_ID"
+        },
+        "religion": {
+          "source": "ReligSum"
+        },
+        "religiosity": {
+          "source": "ChAttend"
+        },
+        "ethnicity": {
+          "source": "raceori4"
+        },
+        "tenure": {
+          "source": "Tenure2E"
+        },
+        "employment_status": {
+          "source": "REconSum"
+        },
+        "marital_status": {
+          "source": "MarStat"
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "file": "raw_sav/bsa23.sav",
+      "file_type": "sav",
+      "weight_var": "BSA23_final_wt",
+      "id_var": "Serial_scrambled",
+      "missing_codes": [
+        -11,
+        -7,
+        -4,
+        -3,
+        -2,
+        -1,
+        97,
+        98,
+        99
+      ],
+      "demographics_map": {
+        "age": {
+          "source": "RespAge_Archive"
+        },
+        "gender": {
+          "source": "DVsex23"
+        },
+        "education": {
+          "source": "HEdQual2"
+        },
+        "income": {
+          "source": "HHincome",
+          "source_type": "quartile"
+        },
+        "class": {
+          "source": "RClassGP"
+        },
+        "region": {
+          "source": "GOR"
+        },
+        "religion": {
+          "source": "Religsum"
+        },
+        "religiosity": {
+          "source": "ChAttend"
+        },
+        "ethnicity": {
+          "source": "Raceori4"
+        },
+        "tenure": {
+          "source": "TenHhl_Archive"
+        },
+        "employment_status": {
+          "source": "REconSum"
+        },
+        "marital_status": {
+          "source": "MarStat6_Archive"
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "file": "raw_sav/bsa24.sav",
+      "file_type": "sav",
+      "weight_var": "BSA24_final_wt_GB18",
+      "id_var": "serial_EUL",
+      "missing_codes": [
+        -7,
+        -4,
+        -3,
+        -2,
+        -1,
+        97,
+        98,
+        99
+      ],
+      "demographics_map": {
+        "age": {
+          "source": "RespAge_Archive"
+        },
+        "gender": {
+          "source": "DVsex24"
+        },
+        "education": {
+          "source": "HEdQual2"
+        },
+        "income": {
+          "source": "HHincome",
+          "source_type": "quartile"
+        },
+        "class": {
+          "source": "RClassGP"
+        },
+        "region": {
+          "source": "GOR"
+        },
+        "religion": {
+          "source": "Religsum"
+        },
+        "religiosity": {
+          "source": "ChAttend"
+        },
+        "ethnicity": {
+          "source": "Raceori4"
+        },
+        "tenure": {
+          "source": "TENHHL_Archive"
+        },
+        "employment_status": {
+          "source": "ReconAct"
+        },
+        "marital_status": {
+          "source": "MarStat6_Archive"
+        }
+      }
+    }
+  ]
+}

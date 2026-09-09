@@ -1,0 +1,22 @@
+{
+  "year": 2023,
+  "file": "raw_sav/bsa23.sav",
+  "file_type": "sav",
+  "weight_var": "BSA23_final_wt",
+  "id_var": "Serial_scrambled",
+  "missing_codes": [-11, -7, -4, -3, -2, -1, 97, 98, 99],
+  "demographics_map": {
+    "age": {"source": "RespAge_Archive"},
+    "gender": {"source": "DVsex23"},
+    "education": {"source": "HEdQual2"},
+    "income": {"source": "HHincome", "source_type": "quartile"},
+    "class": {"source": "RClassGP"},
+    "region": {"source": "GOR"},
+    "religion": {"source": "Religsum"},
+    "religiosity": {"source": "ChAttend"},
+    "ethnicity": {"source": "Raceori4"},
+    "tenure": {"source": "TenHhl_Archive"},
+    "employment_status": {"source": "REconSum"},
+    "marital_status": {"source": "MarStat6_Archive"}
+  }
+}

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bsa-rwp"
+version = "1.0.0"
+description = "Reproducible British Social Attitudes harmonisation, measurement and weighted prediction"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = {file = "LICENSE"}
+authors = [{name = "Nicholas Suciu"}]
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "pyreadstat==1.2.7",
+  "pyarrow==16.1.0",
+  "scikit-learn==1.5.1",
+  "matplotlib==3.9.2",
+  "joblib==1.5.3",
+]
+
+[project.optional-dependencies]
+report = ["PyMuPDF==1.28.2"]
+
+[project.scripts]
+bsa-rwp = "bsa_code.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["bsa_code*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]

@@ -1,0 +1,427 @@
+{
+  "year": 2016,
+  "constructs": {
+    "populism": {
+      "items": {
+        "gov_trust": {
+          "var": "GovTrust",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "mp_trust": {
+          "var": "MPsTrust",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "people_no_say": {
+          "var": "govnosa2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "vote_only_way": {
+          "var": "VoteOnly",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6
+          ]
+        },
+        "mps_keep_promises": {
+          "var": "mppromis",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "politicians_corrupt": {
+          "var": "crptpol",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "public_officials_corrupt": {
+          "var": "crptciv",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "government_honesty": {
+          "var": "StatHon",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            5,
+            8,
+            9
+          ]
+        },
+        "parliament_trust": {
+          "var": "Tstparl",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "redistribution_support": {
+          "var": "redistrb",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "management_exploits_workers": {
+          "var": "indust4",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "wealth_fair_share": {
+          "var": "wealth",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "one_law_rich_poor": {
+          "var": "richlaw",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "government_reduce_income_difference": {
+          "var": "govresp7",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "big_business_workers": {
+          "var": "BigBusnn",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        }
+      }
+    },
+    "right": {
+      "items": {
+        "stiff_sentences": {
+          "var": "stifsent",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "death_penalty": {
+          "var": "deathapp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "obey_authority": {
+          "var": "obey",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "obey_law": {
+          "var": "wronglaw",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "traditional_values": {
+          "var": "tradvals",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "censorship_morality": {
+          "var": "censor",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "tradition_premarital_sex": {
+          "var": "PMS",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "tradition_same_sex": {
+          "var": "HomoSex",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "immigration_benefits": {
+          "var": "MigWBen",
+          "min": 1,
+          "max": 7,
+          "direction": "normal",
+          "exclude_codes": [
+            8
+          ]
+        },
+        "eu_policy": {
+          "var": "ECPolicy2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_helping_each_other": {
+          "var": "welfhelp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_spending": {
+          "var": "morewelf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_deserving": {
+          "var": "sochelp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_fiddling": {
+          "var": "dolefidl",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_stand_own_feet": {
+          "var": "welffeet",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_damage_lives": {
+          "var": "damlives",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_pride": {
+          "var": "proudwlf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_unemployed_jobs": {
+          "var": "unempjob",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_benefit_fraud_3000": {
+          "var": "ben3000",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_benefit_fraud_500": {
+          "var": "ben500",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "transgender_prejudice": {
+          "var": "Prejtran",
+          "min": 1,
+          "max": 3,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_superficial_need": {
+          "var": "Tranneed",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_birth_certificate": {
+          "var": "TBirCert",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8
+          ]
+        },
+        "transgender_police": {
+          "var": "trapolic",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_primary_teacher": {
+          "var": "traprims",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_woman_toilet": {
+          "var": "TWomToil",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_man_toilet": {
+          "var": "TManToil",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_woman_refuge": {
+          "var": "TWomRefu",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_feel_disgust": {
+          "var": "trafeel4",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_feel_resentment": {
+          "var": "trafeel6",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_feel_fear": {
+          "var": "trafeel7",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_british": {
+          "var": "NatBrit",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_english": {
+          "var": "NatEng",
+          "min": 0,
+          "max": 1,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_european": {
+          "var": "NatEuro",
+          "min": 0,
+          "max": 1,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_false_benefit_info_wrong": {
+          "var": "FalseBn2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            -2,
+            -1,
+            8,
+            9
+          ]
+        }
+      }
+    }
+  }
+}

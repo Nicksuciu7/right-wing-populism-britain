@@ -1,0 +1,23 @@
+{
+  "year": 2021,
+  "file": "raw_sav/bsa21.tab",
+  "file_type": "tab",
+  "dictionary": "data_dictionary/bsa21_data_dictionary.rtf",
+  "weight_var": "BSA21_final_wt",
+  "id_var": "serial_scrambled",
+  "missing_codes": [-11, -7, -4, -3, -2, -1, 97, 98, 99],
+  "demographics_map": {
+    "age": {"source": "RespAge_Archive"},
+    "gender": {"source": "DVSex21"},
+    "education": {"source": "hedqual2"},
+    "income": {"source": "HHincome", "source_type": "quartile"},
+    "class": {"source": "RClassGP"},
+    "region": {"source": "GOR"},
+    "religion": {"source": "ReligSum20"},
+    "religiosity": {"source": "ChAttend"},
+    "ethnicity": {"source": "RaceOri4"},
+    "tenure": {"source": "tenure_Archive"},
+    "employment_status": {"source": "REconSum20"},
+    "marital_status": {"source": "MarStat6"}
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "audit_date": "2026-09-09",
+  "reference_python": "3.11.14",
+  "reference_platform": "macOS arm64",
+  "submitted_pipeline": "passed; all stages including validate_schema",
+  "corrected_pipeline": "passed; all stages including validate_schema",
+  "submitted_tables_compared": [
+    "measurement/measurement_items_final.csv",
+    "measurement/measurement_pca_factor_summary.csv",
+    "modelling/model_comparison.csv",
+    "modelling/regression_metrics.csv",
+    "modelling/ridge_tuning_grid.csv",
+    "trends/education_by_year_rwp.csv",
+    "trends/employment_status_by_year_rwp.csv",
+    "trends/predictor_trend_model_fit.csv",
+    "trends/predictor_trends.csv",
+    "trends/religion_by_year_rwp.csv",
+    "trends/rwp_prevalence_by_year.csv"
+  ],
+  "comparison_tolerance": {
+    "relative": 1e-10,
+    "absolute": 1e-12
+  },
+  "original_public_outputs_byte_identical": 25,
+  "original_main_configuration_unchanged": true,
+  "corrected_score_and_prevalence_unchanged": true,
+  "unit_tests": {
+    "passed": 13,
+    "requires_survey_data": false
+  },
+  "clean_environment": {
+    "dependency_install": "passed",
+    "editable_package_install": "passed",
+    "pip_check": "passed",
+    "unit_tests_passed": 13,
+    "full_submitted_pipeline": "passed",
+    "full_corrected_pipeline": "passed"
+  },
+  "installed_package_outside_checkout": "both original and clean virtual environments resolve to current source",
+  "nlp_discovery_outside_checkout": "passed with local dictionaries",
+  "occupied_output_guard": "passed; original run manifest unchanged",
+  "missing_input_preflight": "passed with --overwrite; original run manifest unchanged",
+  "frozen_submission_output_guard": "passed",
+  "source_compilation": "passed",
+  "public_file_scan": "passed; targeted path, credential, restricted-artifact and respondent-header checks",
+  "figure_validation": {
+    "overview_figures": 3,
+    "pipeline_figures": 14,
+    "visual_review": "completed; axes, labels and signed correlation scale checked"
+  },
+  "public_pdf": {
+    "pages": 33,
+    "research_pages_2_through_32_text_unchanged": true,
+    "bibliography_retained": true,
+    "candidate_identifier_removed": true,
+    "signed_forms_and_proposal_omitted": true,
+    "metadata_and_annotations_removed": true,
+    "visual_review": "all pages reviewed in contact sheets, edited pages inspected"
+  },
+  "github_actions": {
+    "configured_python_versions": [
+      "3.11",
+      "3.12"
+    ],
+    "remote_execution": "not run"
+  },
+  "publication": "local repository only; no remote or commit created",
+  "local_markdown_link_targets_checked": 105,
+  "public_file_candidates_checked": 138,
+  "representative_private_paths_git_ignored": 6
+}

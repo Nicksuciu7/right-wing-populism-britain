@@ -1,0 +1,469 @@
+{
+  "year": 2023,
+  "constructs": {
+    "populism": {
+      "items": {
+        "gov_trust": {
+          "var": "GovTrust",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "mp_trust": {
+          "var": "MPsTrust",
+          "min": 1,
+          "max": 4,
+          "direction": "normal"
+        },
+        "people_no_say": {
+          "var": "ISSP_Q24_25_Q24_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "wealth_fair_share": {
+          "var": "Wealth",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "one_law_rich_poor": {
+          "var": "Richlaw",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "income_differences_too_large": {
+          "var": "INCDIFFS",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "government_reduce_income_difference": {
+          "var": "ISSP_Q22",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            9
+          ]
+        },
+        "big_business_workers": {
+          "var": "BigBusnN",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "redistribution_support": {
+          "var": "Redistrb",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "management_exploits_workers": {
+          "var": "Indust4",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "government_system_needs_improvement": {
+          "var": "GovtWork",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "government_not_care_people_like_me": {
+          "var": "ISSP_Q24_25_Q25_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "people_not_politicians_decide": {
+          "var": "ISSP_Q28_32_Q28_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "politicians_talk_too_much": {
+          "var": "ISSP_Q28_32_Q29_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "ordinary_people_vs_power": {
+          "var": "ISSP_Q28_32_Q30_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "experts_over_people": {
+          "var": "ISSP_Q28_32_Q32_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    "right": {
+      "items": {
+        "stiff_sentences": {
+          "var": "StifSent",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "death_penalty": {
+          "var": "DeathApp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "obey_authority": {
+          "var": "Obey",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "obey_law": {
+          "var": "WrongLaw",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "traditional_values": {
+          "var": "TradVals",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "immigration_numbers": {
+          "var": "ISSP_Q8",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "immigration_economy": {
+          "var": "MiEcono",
+          "min": 1,
+          "max": 11,
+          "direction": "reverse"
+        },
+        "immigration_culture": {
+          "var": "MiCultur",
+          "min": 1,
+          "max": 11,
+          "direction": "reverse"
+        },
+        "eu_policy": {
+          "var": "ECPolicy2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_helping_each_other": {
+          "var": "Welfhelp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_spending": {
+          "var": "Morewelf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_deserving": {
+          "var": "SocHelp",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_fiddling": {
+          "var": "DoleFidl",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_stand_own_feet": {
+          "var": "WelfFeet",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse"
+        },
+        "welfare_damage_lives": {
+          "var": "Damlives",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_pride": {
+          "var": "Proudwlf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal"
+        },
+        "welfare_benefit_fraud_3000": {
+          "var": "Ben3000",
+          "min": 1,
+          "max": 4,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "eu_sovereignty": {
+          "var": "EUImpSov",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "eu_exit_economy": {
+          "var": "EUExEco2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "transgender_birth_certificate": {
+          "var": "TbirCert",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "welfare_false_claims_confusion": {
+          "var": "FalsConf",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "welfare_cheat_not_enough": {
+          "var": "CheatPor",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "welfare_fraud_caught": {
+          "var": "FalCatch",
+          "min": 1,
+          "max": 4,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "censorship_morality": {
+          "var": "Censor",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            8,
+            9
+          ]
+        },
+        "identity_britain_others_like": {
+          "var": "ISSP_Q2_c_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "identity_truly_british_feel": {
+          "var": "ISSP_Q1_e_slice",
+          "min": 1,
+          "max": 4,
+          "direction": "reverse",
+          "exclude_codes": [
+            5,
+            8,
+            9
+          ]
+        },
+        "identity_truly_british_laws": {
+          "var": "ISSP_Q1_d_slice",
+          "min": 1,
+          "max": 4,
+          "direction": "reverse",
+          "exclude_codes": [
+            5,
+            8,
+            9
+          ]
+        },
+        "welfare_false_benefit_info_wrong": {
+          "var": "FalseBn2",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            -2,
+            -1,
+            8,
+            9
+          ]
+        },
+        "immigration_increase_crime": {
+          "var": "ISSP_Q7_a_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "immigration_good_economy": {
+          "var": "ISSP_Q7_b_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "immigration_take_jobs": {
+          "var": "ISSP_Q7_c_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "immigration_new_ideas": {
+          "var": "ISSP_Q7_d_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "immigration_preference_natives": {
+          "var": "ISSP_Q7_e_slice",
+          "min": 1,
+          "max": 5,
+          "direction": "reverse",
+          "exclude_codes": [
+            6,
+            8,
+            9
+          ]
+        },
+        "eu_membership_benefit": {
+          "var": "ISSP_Q39b",
+          "min": 1,
+          "max": 5,
+          "direction": "normal",
+          "exclude_codes": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "eu_membership_vote": {
+          "var": "ISSP_Q42",
+          "min": 1,
+          "max": 2,
+          "direction": "normal",
+          "exclude_codes": [
+            3,
+            8,
+            9
+          ]
+        }
+      }
+    }
+  }
+}

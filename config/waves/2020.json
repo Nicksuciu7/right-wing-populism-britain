@@ -1,0 +1,22 @@
+{
+  "year": 2020,
+  "file": "raw_sav/bsa20.sav",
+  "file_type": "sav",
+  "weight_var": "BSA20_wt_new",
+  "id_var": "serial",
+  "missing_codes": [-11, -7, -4, -3, -2, -1, 97, 98, 99],
+  "demographics_map": {
+    "age": {"source": "RespAgeE"},
+    "gender": {"source": "RespSx2cat"},
+    "education": {"source": "HEdQual2"},
+    "income": {"source": "HHincome", "source_type": "quartile"},
+    "class": {"source": "RClassGP"},
+    "region": {"source": "GOR"},
+    "religion": {"source": "ReligSum20"},
+    "religiosity": {"source": "ChAttend"},
+    "ethnicity": {"source": "RaceOri4"},
+    "tenure": {"source": "TenureE"},
+    "employment_status": {"source": "REconSum20"},
+    "marital_status": {"source": "MarStat6"}
+  }
+}

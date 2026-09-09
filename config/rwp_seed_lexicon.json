@@ -1,0 +1,519 @@
+{
+  "anti_elite": {
+    "description": "Hostility towards elites, politicians, and the governing class.",
+    "keywords": [
+      "elite",
+      "elites",
+      "anti elite",
+      "establishment",
+      "politician",
+      "politicians",
+      "government",
+      "parliament",
+      "mp",
+      "mps",
+      "westminster",
+      "ruling class",
+      "those in power",
+      "ordinary people",
+      "out of touch",
+      "promises"
+    ],
+    "phrases": [
+      "politicians are corrupt",
+      "politicians cannot be trusted",
+      "mps lose touch",
+      "mps keep promises",
+      "elite do not care",
+      "government does not listen",
+      "ordinary people ignored"
+    ],
+    "strong_phrases": [
+      "people we elect as mps",
+      "mps lose touch",
+      "mps keep promises",
+      "politicians are corrupt",
+      "ordinary people ignored by government"
+    ],
+    "exclude_keywords": [
+      "management",
+      "redistribute",
+      "redistribution",
+      "wealth",
+      "rich",
+      "poor",
+      "school",
+      "teacher",
+      "doctors",
+      "doctor",
+      "hospital",
+      "bank",
+      "banks",
+      "police",
+      "legal system",
+      "court",
+      "courts",
+      "eu",
+      "european union",
+      "brexit",
+      "electoral",
+      "scottish",
+      "northern ireland",
+      "devolution"
+    ],
+    "exclude_phrases": [
+      "voting system for general elections",
+      "change or keep the voting system",
+      "laws that only affect england",
+      "scotland has its own parliament",
+      "now that scotland has its own parliament"
+    ]
+  },
+  "inequality": {
+    "description": "Grievance about unfairness, unequal treatment, and rich-poor divides.",
+    "keywords": [
+      "inequality",
+      "unequal",
+      "unfair",
+      "fairness",
+      "redistribute",
+      "redistribution",
+      "fair share",
+      "wealth",
+      "rich",
+      "poor",
+      "wealthy",
+      "worker",
+      "workers",
+      "working people",
+      "big business",
+      "ordinary people",
+      "privilege",
+      "privileged"
+    ],
+    "phrases": [
+      "government should redistribute",
+      "redistribute income from the better off",
+      "one law for the rich",
+      "one law for the poor",
+      "rich and poor",
+      "fair share of wealth",
+      "big business benefits owners at the expense of workers",
+      "unfair society",
+      "ordinary people do not get their fair share"
+    ]
+  },
+  "authoritarianism": {
+    "description": "Preference for obedience, discipline, punishment, and strong authority.",
+    "keywords": [
+      "authority",
+      "authoritarian",
+      "obey",
+      "obedience",
+      "discipline",
+      "law",
+      "order",
+      "punishment",
+      "sentence",
+      "sentences",
+      "crime",
+      "criminal",
+      "strict",
+      "censorship",
+      "traditional",
+      "moral standards",
+      "traditional values"
+    ],
+    "phrases": [
+      "obey the law",
+      "obey authority",
+      "stiff sentences",
+      "death penalty",
+      "censorship of films and magazines",
+      "uphold moral standards",
+      "respect for authority",
+      "law and order",
+      "traditional values"
+    ]
+  },
+  "immigration": {
+    "description": "Attitudes towards immigrants, migrants, asylum, and national exclusion.",
+    "keywords": [
+      "immigration",
+      "immigrant",
+      "immigrants",
+      "migrant",
+      "migrants",
+      "migration",
+      "asylum",
+      "asylum seeker",
+      "refugee",
+      "refugees",
+      "illegal immigrant",
+      "foreign",
+      "outsider",
+      "border",
+      "citizenship",
+      "number of immigrants",
+      "muslim",
+      "non western",
+      "other countries"
+    ],
+    "phrases": [
+      "too many immigrants",
+      "immigrants take jobs",
+      "immigrants take benefits",
+      "immigrants and crime",
+      "asylum seekers should stay",
+      "exclude illegal immigrants",
+      "immigration numbers",
+      "number of immigrants to britain",
+      "migrants come to britain",
+      "immigrants from other countries"
+    ],
+    "strong_phrases": [
+      "illegal immigrants",
+      "number of immigrants to britain",
+      "migrants come to britain from other countries",
+      "immigration numbers",
+      "asylum seekers should stay",
+      "exclude illegal immigrants"
+    ]
+  },
+  "welfare": {
+    "description": "Attitudes about social security, deservingness, and benefit conditionality.",
+    "keywords": [
+      "welfare",
+      "benefit",
+      "benefits",
+      "social security",
+      "dole",
+      "deserving",
+      "undeserving",
+      "cheat",
+      "cheating",
+      "fiddle",
+      "fiddling",
+      "taxpayer",
+      "taxpayers",
+      "dependency",
+      "unemployment benefit",
+      "benefits for unemployed",
+      "social benefits"
+    ],
+    "phrases": [
+      "people on the dole are fiddling",
+      "welfare state",
+      "stand on their own feet",
+      "deny benefits",
+      "benefit fraud",
+      "social security do not deserve help",
+      "welfare encourages dependency",
+      "benefits for unemployed people",
+      "government should spend more money on welfare"
+    ],
+    "strong_phrases": [
+      "many people who get social security dont really deserve any help",
+      "most people on the dole are fiddling",
+      "if welfare benefits werent so generous people would learn to stand on their own feet",
+      "benefits for unemployed people",
+      "government should spend more money on welfare benefits"
+    ]
+  },
+  "trust": {
+    "description": "Trust or distrust in government, parliament, politicians, and institutions.",
+    "keywords": [
+      "trust",
+      "distrust",
+      "confidence",
+      "government",
+      "parliament",
+      "politicians",
+      "mp",
+      "mps",
+      "institution",
+      "institutions",
+      "westminster",
+      "truth",
+      "honest"
+    ],
+    "phrases": [
+      "trust the government",
+      "trust politicians",
+      "trust parliament",
+      "cannot trust politicians",
+      "government can be trusted",
+      "politicians tell the truth",
+      "tell the truth in a tight corner",
+      "trust british governments",
+      "needs of the nation above the interests of party"
+    ],
+    "strong_phrases": [
+      "trust politicians to tell the truth in a tight corner",
+      "trust british governments of any party",
+      "trust the uk parliament",
+      "place the needs of the nation above the interests of their own political party"
+    ],
+    "exclude_keywords": [
+      "british identity",
+      "english identity",
+      "belonging",
+      "citizenship",
+      "leave the eu",
+      "european union",
+      "police",
+      "legal system",
+      "court",
+      "courts",
+      "bank",
+      "banks",
+      "financial institutions",
+      "electoral",
+      "scottish",
+      "northern ireland",
+      "satisfied",
+      "satisfaction"
+    ],
+    "exclude_phrases": [
+      "how satisfied are you",
+      "doing its job",
+      "voting system for general elections",
+      "laws that only affect england",
+      "scotland has its own parliament",
+      "now that scotland has its own parliament"
+    ]
+  },
+  "corruption": {
+    "description": "Corruption, dishonesty, and cynical views of politicians and public office.",
+    "keywords": [
+      "corruption",
+      "corrupt",
+      "dishonest",
+      "dishonesty",
+      "crooked",
+      "truth",
+      "lie",
+      "lies",
+      "politicians",
+      "public officials",
+      "government"
+    ],
+    "phrases": [
+      "politicians are corrupt",
+      "public officials are corrupt",
+      "to get to the top you have to be corrupt",
+      "politicians tell the truth",
+      "cannot trust politicians",
+      "corrupt government"
+    ],
+    "strong_phrases": [
+      "how many politicians are involved in corruption",
+      "how many public officials are involved in corruption",
+      "to get all the way to the top you have to be corrupt",
+      "politicians are corrupt",
+      "public officials are corrupt"
+    ]
+  },
+  "eu": {
+    "description": "Attitudes towards the European Union, Brexit, sovereignty, and Britain's place in Europe.",
+    "keywords": [
+      "eu",
+      "european union",
+      "brexit",
+      "leave the eu",
+      "outside the eu",
+      "membership of the european union",
+      "member of the european union",
+      "sovereignty",
+      "independent country",
+      "own laws",
+      "influence in the world",
+      "britain economy",
+      "britain's economy",
+      "distinctive identity"
+    ],
+    "phrases": [
+      "being a member of the european union undermines britain's distinctive identity",
+      "being a member of the european union undermines britain's right to be an independent country",
+      "as a result of leaving the eu will britain have more influence in the world",
+      "as a result of leaving the eu will britain's economy be better off",
+      "being outside the european union has strengthened britain's ability to be an independent country"
+    ],
+    "strong_phrases": [
+      "undermines britain's distinctive identity",
+      "independent country that makes its own laws",
+      "as a result of leaving the eu",
+      "britain have more influence in the world",
+      "britain's economy be better off"
+    ]
+  },
+  "identity": {
+    "description": "National belonging, cultural membership, and who counts as part of the nation.",
+    "keywords": [
+      "identity",
+      "national identity",
+      "british",
+      "britain",
+      "english",
+      "england",
+      "scottish",
+      "wales",
+      "welsh",
+      "uk",
+      "united kingdom",
+      "belong",
+      "belonging",
+      "citizen",
+      "citizenship",
+      "muslim",
+      "european union",
+      "eu",
+      "brexit"
+    ],
+    "phrases": [
+      "truly british",
+      "belong in britain",
+      "national identity",
+      "british values",
+      "english identity",
+      "who belongs",
+      "sense of belonging to the united kingdom",
+      "more english or british",
+      "more scottish or british",
+      "britain's policy should be to leave the european union"
+    ],
+    "strong_phrases": [
+      "sense of belonging to the united kingdom",
+      "how you see yourself as british or english",
+      "how you see yourself as scottish or british",
+      "british values",
+      "leave the european union"
+    ],
+    "exclude_keywords": [
+      "trust",
+      "distrust",
+      "government",
+      "politicians",
+      "parliament",
+      "party",
+      "truth",
+      "corrupt",
+      "police",
+      "legal system"
+    ]
+  },
+  "tradition": {
+    "description": "Traditional moral and social attitudes about sex, marriage, and same-sex relationships.",
+    "keywords": [
+      "traditional",
+      "tradition",
+      "moral",
+      "morality",
+      "marriage",
+      "before marriage",
+      "premarital",
+      "same sex",
+      "homosexual",
+      "sexual relations",
+      "family values",
+      "wrong"
+    ],
+    "phrases": [
+      "sexual relations before marriage",
+      "man and woman have sexual relations before marriage",
+      "sexual relations between two adults of the same sex",
+      "same sex is wrong",
+      "what would your general opinion be"
+    ],
+    "strong_phrases": [
+      "sexual relations before marriage",
+      "sexual relations between two adults of the same sex",
+      "if it is wrong for a man and woman to have sexual relations before marriage",
+      "if sexual relations between two adults of the same sex is wrong"
+    ]
+  },
+  "gender": {
+    "description": "Attitudes towards transgender people, gender identity, and related rights or social comfort.",
+    "keywords": [
+      "transgender",
+      "gender identity",
+      "birth certificate",
+      "male",
+      "female",
+      "toilet",
+      "toilets",
+      "refuge",
+      "prejudice",
+      "woman",
+      "man",
+      "sex changed",
+      "sex on birth certificate"
+    ],
+    "phrases": [
+      "prejudiced against people who are transgender",
+      "transgender woman to use female public toilets",
+      "transgender man to use male public toilets",
+      "transgender woman to use a refuge for women",
+      "birth certificate changed if they want"
+    ],
+    "strong_phrases": [
+      "people who are transgender",
+      "transgender woman to use female public toilets",
+      "transgender man to use male public toilets",
+      "birth certificate changed if they want"
+    ]
+  },
+  "voice": {
+    "description": "Political efficacy, whether ordinary people feel heard, and whether they have a say.",
+    "keywords": [
+      "voice",
+      "say",
+      "no say",
+      "heard",
+      "ignored",
+      "listen",
+      "listened",
+      "ordinary people",
+      "people like me",
+      "representation",
+      "represented",
+      "powerless",
+      "influence",
+      "voting"
+    ],
+    "phrases": [
+      "people like me have no say",
+      "ordinary people have no voice",
+      "government does not listen",
+      "people are ignored",
+      "have a say",
+      "voice in government",
+      "voting is the only way people like me can have any say"
+    ],
+    "strong_phrases": [
+      "people like me have no say",
+      "voting is the only way people like me can have any say",
+      "government does not listen",
+      "ordinary people have no voice"
+    ],
+    "exclude_keywords": [
+      "creative",
+      "help",
+      "responsibility",
+      "job",
+      "school",
+      "electoral",
+      "scottish",
+      "northern ireland",
+      "devolution"
+    ],
+    "exclude_phrases": [
+      "voting system for general elections",
+      "change or keep the voting system",
+      "laws that only affect england",
+      "scotland has its own parliament",
+      "now that scotland has its own parliament",
+      "house of commons"
+    ]
+  }
+}

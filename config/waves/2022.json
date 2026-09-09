@@ -1,0 +1,22 @@
+{
+  "year": 2022,
+  "file": "raw_sav/bsa22.sav",
+  "file_type": "sav",
+  "weight_var": "BSA22_final_wt",
+  "id_var": "serial_scrambled",
+  "missing_codes": [-11, -7, -4, -3, -2, -1, 97, 98, 99],
+  "demographics_map": {
+    "age": {"source": "RespAge_Archive"},
+    "gender": {"source": "DVSex22"},
+    "education": {"source": "HEdQual2"},
+    "income": {"source": "HHincome", "source_type": "quartile"},
+    "class": {"source": "RClassGP"},
+    "region": {"source": "GOR"},
+    "religion": {"source": "ReligSum22"},
+    "religiosity": {"source": "ChAttend"},
+    "ethnicity": {"source": "raceori4"},
+    "tenure": {"source": "tenhhl_Archive"},
+    "employment_status": {"source": "REconSum"},
+    "marital_status": {"source": "MarStat6"}
+  }
+}

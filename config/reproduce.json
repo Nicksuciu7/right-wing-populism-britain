@@ -1,0 +1,15 @@
+{
+  "extends": "code_config.json",
+  "paths": {
+    "derived_dir": "outputs/reproduced/build",
+    "outputs_dir": "outputs/reproduced/main"
+  },
+  "harmonisation_qc": {
+    "summary_path": "outputs/reproduced/build/diagnostics/harmonisation_summary.csv"
+  },
+  "measurement": {
+    "pca_structure": {
+      "path": "outputs/reproduced/build/models/pca_scoring_structure.json"
+    }
+  }
+}
